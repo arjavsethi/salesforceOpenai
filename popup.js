@@ -36,7 +36,7 @@ chrome.runtime.onMessage.addListener(async(obj, sender, response) => {
            var answer = document.getElementById("answers");
            answer.innerText = value.str;
            var prompt = `The text below is of salesforce trail head i am giving the text which contains the 2 question and options for both question both.Please return only  answer  with option A ,B,C,D.  And question1 and question2 are divided by following   <-----Next question----->  , text = '${value.str}' I am also attaching the content from which you can train to give answer ${value.text} `
-           const apiKey = "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"
+           const apiKey = "Your API key"
           console.log("hello")
            
         const response = await apiCall(prompt,apiKey).then(response => response.json())
